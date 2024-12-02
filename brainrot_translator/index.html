@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainrot</title>
+    <link rel="stylesheet" href="appeal.css">
+</head>
+
+<body>
+    <section>
+        <button class="Navbarbutt" onclick=toggleMenu()>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div  class="sliding-menu">
+            <p>About Us</p>
+            <p>Help!</p>
+        </div>
+
+        <div class="nav-options">
+            <button class="Navbarbutt" onclick="showabout()"></button>
+            <button class="Navbarbutt" onclick="showhelp()"></button>
+        </div>
+        
+        <div id="heading">
+            <h1 class="mheads">DripDecoder</h1>
+            <h2 class="mfoots">the genz way</h2>
+        </div>
+        
+        <div id="options">
+
+            <!-- <a href="content.html">
+                <button class="content">
+                    Content
+                </button>
+            </a> -->
+            <a href="translator.html">
+                <button class="trans">
+                    Translator
+                </button>
+            </a>
+
+        </div>
+        
+        
+    </section>
+    <script>
+        // Toggle visibility of the sliding menu
+        function toggleMenu() {
+            const menu = document.getElementById('sliding-menu');
+            menu.classList.toggle('active');  // Toggle the 'active' class
+        }
+
+        // Switch between content and translator views
+        function showabout() {
+            document.getElementById('about-container').style.display = 'block';
+            document.getElementById('help-container').style.display = 'none';
+        }
+
+        function showhelp() {
+            document.getElementById('about-container').style.display = 'block';
+            document.getElementById('help-container').style.display = 'none';
+        }
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* General Reset and Styling */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(S.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+.mheads {
+    width: 100%;
+    font-size: 70px;
+    margin-bottom: 0;
+    
+}
+
+#heading{
+    font-family: 'Courier New', monospace;
+    color: rgb(72, 69, 255);
+    text-align: center;
+    font-weight: bolder;
+    margin: 60 auto;
+}
+
+/* Footer */
+.mfoots {
+    margin-top: 0;
+    width: 100%;
+    font-size: 35px;
+}
+
+/* Navbar Button */
+.Navbarbutt {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Hover Effect for Navbar Button */
+.Navbarbutt:hover {
+    transform: scale(1.1); 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 50%; 
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+/* Hamburger Lines */
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change color of hamburger lines on hover */
+.Navbarbutt:hover .hamburger span {
+    background-color: #000fb4; /* Change color on hover */
+}
+
+
+/* Sliding Menu */
+.sliding-menu {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    height: 500px;
+    width: 1300px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-family: 'Courier New', monospace;
+    color: rgb(49, 53, 52);
+    text-align: left;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sliding Menu Active State */
+.sliding-menu.active {
+    transform: translateX(0);
+    top: 1px; /* Position when visible */
+}
+.nav-options {
+    display: flex;
+    margin-top: 50px;
+}
+/* Textbox */
+.mtextbox {
+    position: fixed;
+    top: 350px;
+    left: 150px;
+    opacity: 0.5;
+}
+
+.flabel {
+    position: fixed;
+    top: 250px;
+    left: 150px;
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+    color: rgb(173, 233, 233);
+    
+}
+
+.glabel {
+    position: fixed;
+    top: 250px;
+    right: 400px;
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+    color: rgb(173, 233, 233);
+}
+
+.ntextbox{
+    position: fixed;
+    top: 350px;
+    right: 150px;
+    opacity: 0.5;
+}
+
+#options{
+    margin: 0 auto;
+
+}
+
+.trans{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: rgb(5, 119, 119);
+}
+
+.trans:hover{
+    transform: scale(1.4);
+    color: rgb(37, 29, 255);
+    
+}
+
+
+
+.red {
+    color: red; /* Text will change to red when this class is applied */
+}
+
+#modes button.active {
+    background-color: #03076e; /* Darker background for active state */
+    color: white; /* Text color */
+}
+.bred {
+    border-color: black;
+    border-width: 2px; /* Ensure the border is visible */
+    border-style: solid; 
+    color: black;/* Ensure the border style is applied */
+}
+
+
+.trans.hover-black:hover {
+    color: red; /* Change hover color to black */
+    border-color: black; /* Optional: Change border color */
+}
+
+.nred {
+    background-color: red !important; /* Change the background color to red */
+    border-radius: 2px;
+    transition: background-color 0.3s ease; /* Ensure smooth transition */
+}
+
+.red-bg {
+    background-color: red !important; /* Change background color to red */
+    color: white !important; /* Ensure text remains visible */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+

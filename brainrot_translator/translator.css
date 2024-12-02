@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-image: url("kai.jpg");
+    background-position: contain;
+}
+.trantext {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', sans-serif;
+    font-weight: bolder;
+    color: rgb(104, 53, 255);
+}
+
+
+.Navbarbutt {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Navbar Button */
+.Navbarbutt:hover {
+    transform: scale(1.1); 
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 50%; 
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+/* Hamburger Lines */
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change color of hamburger lines on hover */
+.Navbarbutt:hover .hamburger span {
+    background-color: #11dedb; /* Change color on hover */
+}
+
+
+/* Sliding Menu */
+.sliding-menu {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    height: 500px;
+    width: 1300px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sliding Menu Active State */
+.sliding-menu.active {
+    transform: translateX(0);
+    top: 1px; /* Position when visible */
+}
+.nav-options {
+    display: flex;
+    margin-top: 50px;
+}
+
+#transboxes{
+    display: flex;
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+}
+
+.langtext{
+    margin-bottom: 20px;
+    color: black;
+}
+.slangs{
+    margin-left: 165px;
+    opacity: 0.5;
+    resize: none;
+    padding: 10px;
+    
+}
+
+.english{
+    margin-left: 25px;
+    opacity: 0.5;
+    resize: none;
+    padding: 10px; 
+    
+}
+
+.textbox{
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    border-radius: 40px;
+    background-color: beige;
+}
+
+#convbutt{
+    margin-top: 32px;
+
+}
+
+
+.convert{
+    position: relative;
+    top: 30px;
+    left: 560px;
+    font-size: 30px;
+    border-radius: 40px;
+    width: 200px;
+    cursor: pointer;
+
+}
+
+.convert:hover{
+    transform: scale(1.4);
+    color: #00aa36;
+}
+
+#englishText {
+    font-size: 28px; /* Bigger text for input box */
+}
+
+#brainrotText {
+    font-size: 28px; /* Slightly smaller text for output box */
+}
+
+.red{
+    color: red;
+}
